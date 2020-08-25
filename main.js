@@ -1,5 +1,6 @@
 var answers = ["unglaubliche", "umfeld", "wesentlich", "wissenchaftlich"];
 var answersNext = ["weltbuild", "gucken", "vollkommen", "vergangenheit"];
+var answersNextTo = ["dienlich", "stellen", "hufen", "entspannen", "entspinnen"];
 
 var button = document.querySelector('button');
 button.disabled = true;
@@ -25,22 +26,46 @@ var tralivali = [{
     },
     {
         question: 'Идеальный',
-        answers: answers,
+        answers: answersNext,
         correct: 2
     }, {
         question: 'Прошлое',
-        answers: answers,
+        answers: answersNext,
         correct: 3
 
     }, {
         question: 'Смотреть',
-        answers: answers,
+        answers: answersNext,
         correct: 1
     }, {
         question: 'Мировоззрение',
-        answers: answers,
+        answers: answersNext,
         correct: 0
+    },
+    
+    {
+        question: 'Годный',
+        answers: answersNextTo,
+        correct: 0
+    }, {
+        question: 'Ставить',
+        answers: answersNextTo,
+        correct: 1
+
+    }, {
+        question: 'Копытный',
+        answers: answersNextTo,
+        correct: 2
+    }, {
+        question: 'расслаблять',
+        answers: answersNextTo,
+        correct: 3
+    }, {
+        question: 'начинать',
+        answers: answersNextTo,
+        correct: 4
     }
+
 ];
 
 var currentQuestionIndex = 0;
