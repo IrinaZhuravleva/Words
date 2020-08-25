@@ -101,7 +101,10 @@ function selectQuestion() {
 
 var nextButton = document.querySelector('button.nextButton')
 
+
+
 function nextQuestion(correct, index) {
+    checkVisibility();
     document.querySelector('.question').innerHTML = tralivaliShuffled[currentQuestionIndex].question;
 
     if (correct == index) {
@@ -109,6 +112,7 @@ function nextQuestion(correct, index) {
         if (nextButton.disabled) {
             nextButton.disabled = false;
         }
+
     } else {
         document.querySelector('.checking-incorrect').style.display = 'block';
         if (!nextButton.disabled) {
@@ -145,6 +149,7 @@ function nextButtonClickHandler() {
         clearAnswersHTML();
         currentQuestionIndex++;
         document.querySelector('.expression-number').innerText = `Номер слова: ${currentQuestionIndex + 1} из ${tralivali.length}`;
+        checkVisibility()
         showQuestion();
     }
 }
