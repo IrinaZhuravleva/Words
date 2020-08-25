@@ -1,6 +1,7 @@
 var answers = ["unglaubliche", "umfeld", "wesentlich", "wissenchaftlich"];
 var answersNext = ["weltbuild", "gucken", "vollkommen", "vergangenheit"];
 var answersNextTo = ["dienlich", "stellen", "hufen", "entspannen", "entspinnen"];
+var answersNextToNext = ["selbstandlich", "vorstellen", "traum", "schaffen", "beziehung"];
 
 var button = document.querySelector('button');
 button.disabled = true;
@@ -62,6 +63,29 @@ var tralivali = [{
         correct: 3
     }, {
         question: 'начинать',
+        answers: answersNextTo,
+        correct: 4
+
+        //
+    }, {
+        question: 'самоуверенный',
+        answers: answersNextTo,
+        correct: 0
+
+    }, {
+        question: 'представлять',
+        answers: answersNextTo,
+        correct: 1
+    }, {
+        question: 'мечтать',
+        answers: answersNextTo,
+        correct: 2
+    }, {
+        question: 'творить',
+        answers: answersNextTo,
+        correct: 3
+    }, {
+        question: 'отношение',
         answers: answersNextTo,
         correct: 4
     }
