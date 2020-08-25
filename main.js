@@ -69,24 +69,24 @@ var tralivali = [{
         //
     }, {
         question: 'самоуверенный',
-        answers: answersNextTo,
+        answers: answersNextToNext,
         correct: 0
 
     }, {
         question: 'представлять',
-        answers: answersNextTo,
+        answers: answersNextToNext,
         correct: 1
     }, {
         question: 'мечтать',
-        answers: answersNextTo,
+        answers: answersNextToNext,
         correct: 2
     }, {
         question: 'творить',
-        answers: answersNextTo,
+        answers: answersNextToNext,
         correct: 3
     }, {
         question: 'отношение',
-        answers: answersNextTo,
+        answers: answersNextToNext,
         correct: 4
     }
 
