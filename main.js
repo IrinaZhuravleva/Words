@@ -1,7 +1,10 @@
-var answers = ["unglaubliche", "umfeld", "wesentlich", "wissenchaftlich"];
+var answers = ["unglaubliche", "umfeld", "wesentlich", "wissenschaftlich"];
 var answersNext = ["weltbuild", "gucken", "vollkommen", "vergangenheit"];
 var answersNextTo = ["dienlich", "stellen", "hufen", "entspannen", "entspinnen"];
 var answersNextToNext = ["selbstandlich", "vorstellen", "traum", "schaffen", "beziehung"];
+var answersNextToNextTo = ["locker", "brustkorb", "lichtstrahl", "deutlich", "dankbarkeit"];
+var answersFive = ["empfinden", "heilung", "umziehen", "aussteigen", "tief"];
+// var answers = ["", "", "", "", ""]; шаг
 
 var button = document.querySelector('button');
 button.disabled = true;
@@ -43,7 +46,6 @@ var tralivali = [{
         answers: answersNext,
         correct: 0
     },
-    
     {
         question: 'Годный',
         answers: answersNextTo,
@@ -65,13 +67,10 @@ var tralivali = [{
         question: 'начинать',
         answers: answersNextTo,
         correct: 4
-
-        //
     }, {
         question: 'самоуверенный',
         answers: answersNextToNext,
         correct: 0
-
     }, {
         question: 'представлять',
         answers: answersNextToNext,
@@ -87,9 +86,50 @@ var tralivali = [{
     }, {
         question: 'отношение',
         answers: answersNextToNext,
+        correct: 4     
+    }, {
+        question: 'свободный',
+        answers: answersNextToNextTo,
+        correct: 0
+    }, {
+        question: 'грудная клетка',
+        answers: answersNextToNextTo,
+        correct: 1
+    }, {
+        question: 'луч света',
+        answers: answersNextToNextTo,
+        correct: 2
+    }, {
+        question: 'отчётливый',
+        answers: answersNextToNextTo,
+        correct: 3
+    }, {
+        question: 'благодарность',
+        answers: answersNextToNextTo,
+        correct: 4
+        //
+    }, {
+        question: 'чувствовать',
+        answers: answersFive,
+        correct: 0
+
+    }, {
+        question: 'лечение',
+        answers: answersFive,
+        correct: 1
+    }, {
+        question: 'шаг',
+        answers: answersFive,
+        correct: 2
+    }, {
+        question: 'выходить',
+        answers: answersFive,
+        correct: 3
+    }, {
+        question: 'глубоко',
+        answers: answersFive,
         correct: 4
     }
-
 ];
 
 var currentQuestionIndex = 0;
@@ -187,3 +227,26 @@ nextButton.addEventListener('click', function () {
 })
 
 showQuestion();
+// //
+//     }, {
+//         question: '',
+//         answers: answersNextToNextTo,
+//         correct: 0
+
+//     }, {
+//         question: '',
+//         answers: answersNextToNextTo,
+//         correct: 1
+//     }, {
+//         question: '',
+//         answers: answersNextToNextTo,
+//         correct: 2
+//     }, {
+//         question: '',
+//         answers: answersNextToNextTo,
+//         correct: 3
+//     }, {
+//         question: '',
+//         answers: answersNextToNextTo,
+//         correct: 4
+//     }
