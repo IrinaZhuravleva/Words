@@ -1,4 +1,6 @@
-var answers = ["unglaubliche", "umfeld", "wissentliche", "wissenchaftlich"];
+var answers = ["unglaubliche", "umfeld", "wesentlich", "wissenchaftlich"];
+var answersNext = ["weltbuild", "gucken", "vollkommen", "vergangenheit"];
+
 var button = document.querySelector('button');
 button.disabled = true;
 
@@ -20,6 +22,24 @@ var tralivali = [{
         question: 'Существенный',
         answers: answers,
         correct: 2
+    },
+    {
+        question: 'Идеальный',
+        answers: answers,
+        correct: 2
+    }, {
+        question: 'Прошлое',
+        answers: answers,
+        correct: 3
+
+    }, {
+        question: 'Смотреть',
+        answers: answers,
+        correct: 1
+    }, {
+        question: 'Мировоззрение',
+        answers: answers,
+        correct: 0
     }
 ];
 
