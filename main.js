@@ -143,8 +143,11 @@ expressionNumber.innerText = `Слово: ${currentQuestionIndex + 1} из ${tra
 //     incorrect: 0
 // }
 
+var questionToShow;
+
 function showQuestion() {
     var questionToShow = selectQuestion();
+    button.disabled = true;
     addQuestionToSite(questionToShow);
 }
 
